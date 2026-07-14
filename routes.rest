@@ -1,0 +1,31 @@
+//LOCALHOST
+###GET ALL CONTACTS
+GET http://localhost:3000/contacts
+
+### GET CONTACT BY ID
+GET http://localhost:3000/contacts/6a49a5e9b41487c3fc00e224
+
+### CREATE CONTACT
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Martincho",
+  "lastName": "Rodriguez",
+  "email": "mRodriguex@test.com",
+  "favoriteColor": "Pink",
+  "birthday": "15-12-2020"
+}
+###Put CONTACT
+PUT http://localhost:3000/contacts/6a564af8427837b6cfe6608f HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Sarah",
+    "lastName" : "Allen",
+    "email" : "sAllen@test.com",
+    "favoriteColor" : "Green",
+    "birthday" : "07/12/2020"
+}
+### DELETE contact
+DELETE http://localhost:3000/contacts/6a564168c88373de2752ddfe
